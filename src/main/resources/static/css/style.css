@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0;
+  width: 500px;
+}
+
+.form-control input {
+  border: 0;
+  border-bottom: 2px solid #333;
+  padding: 15px 0;
+  display: block;
+  font-size: 18px;
+  font-family: 'Muli', sans-serif;
+  width: 100%;
+  transition: 0.1s ease-in;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: darksalmon;
+  outline: none;
+}
+
+.form-control input:focus + label span ,
+.form-control input:valid + label span{
+  color: darksalmon;
+  transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 13px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+}
